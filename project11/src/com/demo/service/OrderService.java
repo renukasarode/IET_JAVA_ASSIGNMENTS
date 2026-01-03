@@ -1,0 +1,7 @@
+package com.demo.service;
+
+public interface OrderService {
+
+	boolean AddCustomer();
+
+}

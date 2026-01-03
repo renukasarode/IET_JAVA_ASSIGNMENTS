@@ -1,0 +1,33 @@
+1.	Retrieve the entire contents of EMP table.
+---------->select * from emp;
+2.	Print the name of employees.
+---------->select ename from emp;
+3.	Retrieve the list of names and jobs of employees.
+---------->select ename,job from emp;
+4.	List of various department available from dept table.
+---------->select deptno,dname from dept;
+5.	List all information about the Employees of the EMP table.
+---------->select * from emp;
+6.	Show the information of the Department table.
+---------->select * from dept;
+7.	Display the contents of the column Empno, Ename as Employee Name and Sal from the Emp table.
+---------->select empno,ename as "Employee Name" ,sal from emp;
+8.	Display the Job, Comm and Ename from the Emp table with Customized column headings.
+---------->select job as emp_job,comm as emp_comm ,ename as emp_name from emp;
+9.	Display the location as “Location” and names of all the departments as “Department Names”.
+----------> select loc as Location ,dname from dept;
+10.	List the different Managers Codes.
+---------->select mgr from emp;
+11.	Write a query, which concatenates the Emp No, Name and Mgr Code. Display output with spaces in the columns. 
+---------->select concat(empno," ",mgr," ",ename) from emp;
+12.	Create a query to display all the data from the EMP table, separate each column by a comma.
+---------->
+13.	Modify the above query to add a column that will subtract the Old Salary from the New Salary. 
+---------->
+14.	Modify the above query to add a column that will subtract the Old Salary from the New Salary.
+---------->select ename,sal,concat(ename," earns ",sal," monthly, but wants salary ",3*sal) as "Dream salary"from emp;
+15.	Display different types of positions available in the Company.
+---------->select distinct(job) from emp;
+16.	Using the sales table, you need to report the following 
+a.	Appropriate column heading should be given for all the columns.
+---------->select custname as repid,custid,"customer name",prodid,prodname as "product name",amount  from sales;
